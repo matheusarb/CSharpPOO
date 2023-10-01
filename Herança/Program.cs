@@ -1,7 +1,18 @@
 ﻿Console.WriteLine("Herança!\n--------------\n");
 
+Funcionario func = new();
+func.Nome = "jose";
+func.Email = "jose@";
+func.Empresa = "Google";
+func.Salario = 9000;
+
+Console.WriteLine(func.Nome);
+Console.WriteLine(func.Email);
+Console.WriteLine(func.Empresa);
+Console.WriteLine(func.Salario);
+
 var t = new Aluno();
-t.Identificar();
+func.Identificar();
 
 public class Pessoa
 {
