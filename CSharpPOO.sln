@@ -11,6 +11,10 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TratamentoExcecoes", "Trata
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Delegates", "Delegates\Delegates.csproj", "{CFB5D814-7719-46B3-8DED-6F29F2D3DE87}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Eventos", "Eventos\Eventos.csproj", "{95A36ACA-CA41-4B3E-AD5F-3917228E7351}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ", "LINQ\LINQ.csproj", "{FD497341-0885-44F9-9440-D16B08C55086}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +37,14 @@ Global
 		{CFB5D814-7719-46B3-8DED-6F29F2D3DE87}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CFB5D814-7719-46B3-8DED-6F29F2D3DE87}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CFB5D814-7719-46B3-8DED-6F29F2D3DE87}.Release|Any CPU.Build.0 = Release|Any CPU
+		{95A36ACA-CA41-4B3E-AD5F-3917228E7351}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{95A36ACA-CA41-4B3E-AD5F-3917228E7351}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{95A36ACA-CA41-4B3E-AD5F-3917228E7351}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{95A36ACA-CA41-4B3E-AD5F-3917228E7351}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD497341-0885-44F9-9440-D16B08C55086}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD497341-0885-44F9-9440-D16B08C55086}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD497341-0885-44F9-9440-D16B08C55086}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD497341-0885-44F9-9440-D16B08C55086}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
