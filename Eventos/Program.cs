@@ -79,7 +79,5 @@ Console.WriteLine("----Eventos----\n");
 // delegate void PedidoEventHandler();
 
 var name= "suehtam";
-var invertedstring1 = StringExtension.InvertString(name);
-var invertedstring2 = StringExtension.InvertString2(name);
-System.Console.WriteLine(invertedstring1);
-System.Console.WriteLine(invertedstring2);
+System.Console.WriteLine(name.InvertString());
+System.Console.WriteLine(name.InvertString2());
