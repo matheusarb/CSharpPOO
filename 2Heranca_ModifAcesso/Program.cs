@@ -25,7 +25,7 @@ public class ClasseBase
     {
         Console.WriteLine("Classe Base - Método Public");
     }
-
+    
     protected void Protected_Membro()
     {
         Console.WriteLine("Classe Base - Método Protected");
