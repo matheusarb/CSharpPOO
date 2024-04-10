@@ -23,7 +23,7 @@ pedido.CriarPedido();
 
 static class Email
 {
-    public static void Enviar()
+    public static void Enviar(object? sender, EventArgs e)
     {
         System.Console.WriteLine("Enviando email");
     }
@@ -31,7 +31,7 @@ static class Email
 
 static class SMS
 {
-    public static void Enviar()
+    public static void Enviar(object? sender, EventArgs e)
     {
         System.Console.WriteLine("Enviando SMS");
     }
@@ -39,15 +39,20 @@ static class SMS
 
 class Pedido
 {
-    public event PedidoEventHandler? OnCriarPedido;
+    public event EventHandler? OnCriarPedido;
 
     public void CriarPedido()
     {
         System.Console.WriteLine("Pedido criado");
         
         if(OnCriarPedido != null)
-            OnCriarPedido();
+            OnCriarPedido(this, EventArgs.Empty);
     }
 }
 
-delegate void PedidoEventHandler();
+// Delegates pré-definidos:
+// 1. EventHandler
+// 2. EventHandler<TEventArgs>
+
+// //criar o delegate
+// delegate void PedidoEventHandler();
