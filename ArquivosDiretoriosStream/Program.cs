@@ -17,7 +17,7 @@ Console.WriteLine("----\tArquivos, Diretórios, Stream\t----\n");
 var caminhoOrigem = @"C:\dev\arquivo.txt";
 //criar arquivo
 // File.Create(caminhoOrigem); Se fizer assim o arquivo é criado e ficará aberto, não podendo mais ser manipulado
-File.WriteAllText(caminhoOrigem, "Criando primeiro arquivo: \r\n\n");
+File.WriteAllText(caminhoOrigem, "Criando primeiro arquivo: \r\n");
 var novoTexto = "Esse é um teste" +
                 Environment.NewLine +
                 "para verificar \r\n" +
@@ -38,6 +38,8 @@ string[] linhas = File.ReadAllLines(caminhoOrigem);
 // System.Console.WriteLine("Último acesso: "+ File.GetLastAccessTime(caminhoOrigem));
 
 // copiar e mover
-var caminhoCopia = @"C:\dev\arquivo1_copia.txt";
-var caminhoDestinho = @"C:\dev\txt\arquivo.txt";
-File.Copy(caminhoOrigem, caminhoDestinho);
+// var caminhoCopia = @"C:\dev\arquivo1_copia.txt";
+// var caminhoDestinho = @"C:\dev\txt\arquivo.txt";
+// File.Copy(caminhoOrigem, caminhoDestinho);
+
+// V. classe PATH na prática
