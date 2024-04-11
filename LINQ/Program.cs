@@ -47,7 +47,7 @@ var prodMaior2000EDesconto20 = listaProdutos
                                 .OrderBy(p => p.Nome)
                                 .Select(p => new 
                                 {
-                                    Nome = p.Nome.ToUpper(),
+                                    Nome = p.Nome?.ToUpper(),
                                     PrecoDesconto = p.Preco * 0.8
                                 });
 
@@ -58,14 +58,20 @@ var prodMaior2000EDesconto20 = listaProdutos
 // II.5. Somatória, Média e Contagem de produtos eletrônicos
 var mediaProdEletr = listaProdutos.Where(p => p.Categoria == "Eletrônicos")
                         .Average(p => p.Preco);
-System.Console.WriteLine($"A média dos produtos eletr é {mediaProdEletr:C2}");
+// System.Console.WriteLine($"A média dos produtos eletr é {mediaProdEletr:C2}");
 
 // III.1. Métodos LINQ comuns para LOCALIZAR ELEMENTOS
 // .First(), .FirstOrDefault(), .Last(), .LastOrDefault(), .Single(), .SingleOrDefault()
 
 // IV.1. Métodos LINQ comuns para realizar AGRUPAMENTOS
-
-
+// Agrupamento dos produtos por categoria
+var produtosPorCategoria = listaProdutos.GroupBy(p => p.Categoria);
+foreach(var grupo in produtosPorCategoria)
+{
+    System.Console.WriteLine($"{grupo.Key} : {grupo.Count()}");
+    foreach(var p in grupo)
+        System.Console.WriteLine($"\t{p.Nome}\t{p.Preco:C2}\tEstoque: {p.Estoque}");
+}
 
 static void Exibir<T>(IEnumerable<T> list)
 {
