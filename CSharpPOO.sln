@@ -17,6 +17,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LINQ", "LINQ\LINQ.csproj", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArquivosDiretoriosStream", "ArquivosDiretoriosStream\ArquivosDiretoriosStream.csproj", "{3AD3CA04-A32E-4196-B4EF-6807C84A6EE3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerializacaoDesserializacao", "SerializacaoDesserializacao\SerializacaoDesserializacao.csproj", "{3D7A6715-ED29-4C32-999D-C02D50A21602}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +53,10 @@ Global
 		{3AD3CA04-A32E-4196-B4EF-6807C84A6EE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3AD3CA04-A32E-4196-B4EF-6807C84A6EE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3AD3CA04-A32E-4196-B4EF-6807C84A6EE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3D7A6715-ED29-4C32-999D-C02D50A21602}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3D7A6715-ED29-4C32-999D-C02D50A21602}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3D7A6715-ED29-4C32-999D-C02D50A21602}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3D7A6715-ED29-4C32-999D-C02D50A21602}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
