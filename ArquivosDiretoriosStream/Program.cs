@@ -16,5 +16,28 @@ Console.WriteLine("----\tArquivos, Diretórios, Stream\t----\n");
 // IV. Classe FILE na prática:
 var caminhoOrigem = @"C:\dev\arquivo.txt";
 //criar arquivo
-File.Create(caminhoOrigem);
-File.WriteAllText(caminhoOrigem, "Criando primeiro arquivo");
+// File.Create(caminhoOrigem); Se fizer assim o arquivo é criado e ficará aberto, não podendo mais ser manipulado
+File.WriteAllText(caminhoOrigem, "Criando primeiro arquivo: \r\n\n");
+var novoTexto = "Esse é um teste" +
+                Environment.NewLine +
+                "para verificar \r\n" +
+                "se o código funciona";
+File.AppendAllText(caminhoOrigem, novoTexto);
+
+//Ler conteúdo do arquivo
+// System.Console.WriteLine("Conteúdo e informações do arquivo:\n");
+var conteudo = File.ReadAllText(caminhoOrigem);
+// Ler todas as linhas forma alternativa
+string[] linhas = File.ReadAllLines(caminhoOrigem);
+// foreach(var linha in linhas)
+    // System.Console.WriteLine(linha);
+// System.Console.WriteLine(conteudo);
+
+// Obter último acesso
+// System.Console.WriteLine("Última modificação: "+ File.GetLastWriteTime(caminhoOrigem));
+// System.Console.WriteLine("Último acesso: "+ File.GetLastAccessTime(caminhoOrigem));
+
+// copiar e mover
+var caminhoCopia = @"C:\dev\arquivo1_copia.txt";
+var caminhoDestinho = @"C:\dev\txt\arquivo.txt";
+File.Copy(caminhoOrigem, caminhoDestinho);
