@@ -42,4 +42,22 @@ string[] linhas = File.ReadAllLines(caminhoOrigem);
 // var caminhoDestinho = @"C:\dev\txt\arquivo.txt";
 // File.Copy(caminhoOrigem, caminhoDestinho);
 
+
+
 // V. classe PATH na prática
+// útil para manipular caminhos
+
+
+
+// VI. classe STREAM na prática
+var dirSeparador = Path.DirectorySeparatorChar;
+// System.Console.WriteLine("Separador padrão: "+dirSeparador);
+
+string[] diretorios = caminhoOrigem.Split(dirSeparador);
+// foreach(string diretorio in diretorios)
+//     System.Console.WriteLine(diretorio);
+
+var dirArq = Path.GetDirectoryName(caminhoOrigem);
+var nomeArq = Path.GetFileName(caminhoOrigem);
+// System.Console.WriteLine(nomeArq);
+// System.Console.WriteLine(Path.Combine(dirArq, nomeArq));
