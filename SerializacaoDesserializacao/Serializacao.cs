@@ -18,13 +18,15 @@
 // System.Text.Json (vem substituindo a NewtonSoft por melhor desempenho e é nativo do .NET)
 // NewtonSoft.Json
 
+using System.Text.Json.Serialization;
+
 public class Aluno
 {
     public int Id { get; set; }
     public string Nome { get; set; }
     public string Email { get; set; }
     
-    [NonSerialized]
+    [JsonIgnore]
     public int Idade;
 
     public Aluno(){}
