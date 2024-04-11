@@ -52,8 +52,20 @@ var prodMaior2000EDesconto20 = listaProdutos
                                 });
 
 
-foreach(var p in prodMaior2000EDesconto20)
-        System.Console.WriteLine($"{p.Nome}, \tPreço c desconto: {p.PrecoDesconto:C2}");
+// foreach(var p in prodMaior2000EDesconto20)
+//         System.Console.WriteLine($"{p.Nome}, \tPreço c desconto: {p.PrecoDesconto:C2}");
+
+// II.5. Somatória, Média e Contagem de produtos eletrônicos
+var mediaProdEletr = listaProdutos.Where(p => p.Categoria == "Eletrônicos")
+                        .Average(p => p.Preco);
+System.Console.WriteLine($"A média dos produtos eletr é {mediaProdEletr:C2}");
+
+// III.1. Métodos LINQ comuns para LOCALIZAR ELEMENTOS
+// .First(), .FirstOrDefault(), .Last(), .LastOrDefault(), .Single(), .SingleOrDefault()
+
+// IV.1. Métodos LINQ comuns para realizar AGRUPAMENTOS
+
+
 
 static void Exibir<T>(IEnumerable<T> list)
 {
