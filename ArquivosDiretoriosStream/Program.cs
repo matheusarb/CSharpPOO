@@ -47,9 +47,6 @@ string[] linhas = File.ReadAllLines(caminhoOrigem);
 // V. classe PATH na prática
 // útil para manipular caminhos
 
-
-
-// VI. classe STREAM na prática
 var dirSeparador = Path.DirectorySeparatorChar;
 // System.Console.WriteLine("Separador padrão: "+dirSeparador);
 
@@ -61,3 +58,14 @@ var dirArq = Path.GetDirectoryName(caminhoOrigem);
 var nomeArq = Path.GetFileName(caminhoOrigem);
 // System.Console.WriteLine(nomeArq);
 // System.Console.WriteLine(Path.Combine(dirArq, nomeArq));
+
+
+
+// VI. classe STREAM na prática
+// VI.1. Criando FileStream
+var fs1 = new FileStream(caminhoOrigem, FileMode.Open, FileAccess.Read, FileShare.Read);
+
+var fInfo = new FileInfo(caminhoOrigem);
+FileStream fs2 = fInfo.Open(FileMode.Open, FileAccess.Read, FileShare.Read);
+
+var fs3 = File.Open(caminhoOrigem, FileMode.Open, FileAccess.Read, FileShare.Read);
