@@ -65,10 +65,12 @@ var mediaProdEletr = listaProdutos.Where(p => p.Categoria == "Eletrônicos")
 
 // IV.1. Métodos LINQ comuns para realizar AGRUPAMENTOS
 // Agrupamento dos produtos por categoria
-var produtosPorCategoria = listaProdutos.GroupBy(p => p.Categoria);
+var produtosPorCategoria = listaProdutos.GroupBy(p => p.Categoria)
+                            .OrderBy(p => p.Key);
 foreach(var grupo in produtosPorCategoria)
 {
     System.Console.WriteLine($"{grupo.Key} : {grupo.Count()}");
+    
     foreach(var p in grupo)
         System.Console.WriteLine($"\t{p.Nome}\t{p.Preco:C2}\tEstoque: {p.Estoque}");
 }
