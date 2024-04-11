@@ -10,9 +10,9 @@ Console.WriteLine("---Serialização e Desserialização---\n");
 // II.1 Serialização JSON
 // Precisamos de um construtor público parameterless
 var aluno1 = new Aluno(1, "Matheus", "matheus@io.com", 32);
-var caminhoArquivo1 = @"C:\dev\Serializacao\AlunoSerializado.json";
+var caminhoArquivo1 = @"C:\dev\Serializacao\AlunoSerializado2.json";
 
-// using(var stream = new FileStream(caminhoArquivo1, 
+// using(var stream = new FileStream(caminhoArquivo1,
 //                     FileMode.OpenOrCreate,
 //                     FileAccess.ReadWrite)){
 //     JsonSerializer.Serialize(stream, aluno1);
@@ -21,8 +21,8 @@ var caminhoArquivo1 = @"C:\dev\Serializacao\AlunoSerializado.json";
 // II.1.1. Desserialização JSON
 var jsonContent = File.ReadAllText(caminhoArquivo1);
 var aluno = JsonSerializer.Deserialize<Aluno>(jsonContent);
-foreach(var prop in aluno.GetType().GetProperties())
-    System.Console.WriteLine($"{prop.Name} - {prop.GetValue(aluno)}");
+// foreach(var prop in aluno.GetType().GetProperties())
+//     System.Console.WriteLine($"{prop.Name} - {prop.GetValue(aluno)}");
 
 
 // II.2. Serialização XML

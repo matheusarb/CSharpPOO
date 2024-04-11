@@ -19,6 +19,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ArquivosDiretoriosStream", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SerializacaoDesserializacao", "SerializacaoDesserializacao\SerializacaoDesserializacao.csproj", "{3D7A6715-ED29-4C32-999D-C02D50A21602}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assincronismo", "Assincronismo\Assincronismo.csproj", "{E3C1C90A-75BE-4409-9752-F0C9C5D1A54A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -57,6 +59,10 @@ Global
 		{3D7A6715-ED29-4C32-999D-C02D50A21602}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3D7A6715-ED29-4C32-999D-C02D50A21602}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3D7A6715-ED29-4C32-999D-C02D50A21602}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3C1C90A-75BE-4409-9752-F0C9C5D1A54A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3C1C90A-75BE-4409-9752-F0C9C5D1A54A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3C1C90A-75BE-4409-9752-F0C9C5D1A54A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3C1C90A-75BE-4409-9752-F0C9C5D1A54A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
